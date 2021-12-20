@@ -1,0 +1,40 @@
+/* universal */
+body {
+    background: lightgrey;
+    max-width: 900px;
+    margin: auto;
+    line-height: 1.3rem;
+}
+h1 {
+    margin: 0;
+    padding-left: 1rem;
+}
+
+/* header/footer */
+header, footer {
+    height: 5rem;
+    background: grey;
+    display: grid;
+    align-items: center;
+}
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 900px;
+}
+footer p {
+    padding-left: 1rem;
+    font-size: large;
+}
+footer a {
+    text-decoration: none;
+}
+
+/* main */
+main {
+    padding: 1.5rem;
+}
+#toTranslate {
+    width: 50%;
+    margin-top: 0.5rem;
+}

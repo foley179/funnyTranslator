@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include("../partials/head.ejs") %>
+<body>
+
+    <%- include("../partials/header.ejs") %>
+
+    <main>
+
+        <%- include("../partials/description.ejs") %>
+        <%- include("../partials/form.ejs") %>
+
+        <div>
+            <h3>Language:</h3>
+            <p><%= contents.translation %></p>
+        </div>
+
+        <div id="usersInput">
+            <h3>Your input was:</h3>
+            <p id="input">
+                <%= contents.text %>
+            </p>
+        </div>
+
+        <div id="usersOutput">
+            <h3>Resulting output is:</h3>
+            <p id="output">
+                <%= contents.translated %>
+            </p>
+        </div>
+    </main>
+
+    <%- include("../partials/footer.ejs") %>
+
+</body>
+</html>
